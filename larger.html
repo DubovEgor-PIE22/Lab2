@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Print Larger and Smaller Numbers</title>
+</head>
+<body>
+    <script>
+        var inputA = prompt("Enter the first number:");
+        var inputB = prompt("Enter the second number:");
+
+        var numberA = parseFloat(inputA);
+        var numberB = parseFloat(inputB);
+
+        if (numberA > numberB) {
+            alert("Larger number: " + numberA + "\nSmaller number: " + numberB);
+        } else if (numberB > numberA) {
+            alert("Larger number: " + numberB + "\nSmaller number: " + numberA);
+        } else {
+            alert("Both numbers are equal: " + numberA);
+        }
+    </script>
+</body>
+</html>

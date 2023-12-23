@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equation Solver</title>
+</head>
+<body>
+    <script>
+        var x1 = 4.27;
+        var x2 = -2.63;
+        var x3 = 1.39;
+        var a = 2.7;
+        var b = -3.59;
+
+        var y1, y2, y3;
+
+        if (x1 > 2) {
+            y1 = Math.pow(Math.cos(a * x1), 3);
+        } else if (x1 <= -1) {
+            y1 = Math.pow(Math.sin(x1), 2) + (b / x1);
+        } else if (-1 < x1 && x1 <= 2) {
+            y1 = Math.pow(2 - x1 * x1, 3);
+        }
+
+        if (x2 > 2) {
+            y2 = Math.pow(Math.cos(a * x2), 3);
+        } else if (x2 <= -1) {
+            y2 = Math.pow(Math.sin(x2), 2) + (b / x2);
+        } else if (-1 < x2 && x2 <= 2) {
+            y2 = Math.pow(2 - x2 * x2, 3);
+        }
+
+        if (x3 > 2) {
+            y3 = Math.pow(Math.cos(a * x3), 3);
+        } else if (x3 <= -1) {
+            y3 = Math.pow(Math.sin(x3), 2) + (b / x3);
+        } else if (-1 < x3 && x3 <= 2) {
+            y3 = Math.pow(2 - x3 * x3, 3);
+        }
+
+        alert("For x = 4.27, y = " + y1);
+        alert("For x = -2.63, y = " + y2);
+        alert("For x = 1.39, y = " + y3);
+    </script>
+</body>
+</html>

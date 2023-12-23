@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Equation Solver</title>
+</head>
+<body>
+    <script>
+        var x1 = -1;
+        var x2 = 1;
+        var x3 = 3;
+        var x4 = 5;
+        var a = 2.7;
+        var b = -3.59;
+
+        var y1, y2, y3, y4;
+
+        switch (x1) {
+            case -1:
+                y1 = Math.pow(2 - x1 * x1, 3);
+                break;
+            case 1:
+                y1 = Math.pow(Math.sin(x1), 2) + (b / x1);
+                break;
+            case 3:
+                y1 = Math.pow(Math.cos(Math.pow(a * x1, 2)), 3);
+                break;
+            default:
+                y1 = "Equation not defined for x = -1";
+        }
+
+        switch (x2) {
+            case -1:
+                y2 = Math.pow(2 - x2 * x2, 3);
+                break;
+            case 1:
+                y2 = Math.pow(Math.sin(x2), 2) + (b / x2);
+                break;
+            case 3:
+                y2 = Math.pow(Math.cos(Math.pow(a * x2, 2)), 3);
+                break;
+            default:
+                y2 = "Equation not defined for x = 1";
+        }
+
+        switch (x3) {
+            case -1:
+                y3 = Math.pow(2 - x3 * x3, 3);
+                break;
+            case 1:
+                y3 = Math.pow(Math.sin(x3), 2) + (b / x3);
+                break;
+            case 3:
+                y3 = Math.pow(Math.cos(Math.pow(a * x3, 2)), 3);
+                break;
+            default:
+                y3 = "Equation not defined for x = 3";
+        }
+
+        switch (x4) {
+            case -1:
+                y4 = Math.pow(2 - x4 * x4, 3);
+                break;
+            case 1:
+                y4 = Math.pow(Math.sin(x4), 2) + (b / x4);
+                break;
+            case 3:
+                y4 = Math.pow(Math.cos(Math.pow(a * x4, 2)), 3);
+                break;
+            default:
+                y4 = "Equation not defined for x = 5";
+        }
+
+        alert("For x = -1, y = " + y1);
+        alert("For x = 1, y = " + y2);
+        alert("For x = 3, y = " + y3);
+        alert("For x = 5, y = " + y4);
+    </script>
+</body>
+</html>
